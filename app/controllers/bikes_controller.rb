@@ -6,5 +6,6 @@ class BikesController < ApplicationController
   end
 
   def show
+    
   end
 end
