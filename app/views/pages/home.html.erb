@@ -1,37 +1,102 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.pinimg.com/736x/e4/09/6f/e4096f0afce5bbb76ef00df733a2e951.jpg" />
+</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Messages</a>
       </li>
+
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
-</nav>
+</div>
+
+
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.happystubai.com/wp-content/uploads/2017/06/Happy-Stubai-Hotel-Neustift-Tirol-Stubaier-Gletscher-%C3%96sterreich-Hostel-Biking-Aktivurlaub-10.jpg);">
+      <div class="container">
+        <h1>Rent a Bike Anywhere in Morocco, Anytime </h1>
+        <p>Renting a bike has never been easier</p>
+
+<div class="container">
+<form>
+  <div class="wrapper">
+
+    <div class="search-container">
+      <input type="text" class="search" placeholder="Type of bike...">
+      <input type="text" class="date-from" placeholder="Pick-up > Drop-off">
+      <input type="text" class="date-to" placeholder="Location...">
+
+    </div>
+  </div>
+</form>
+</div>
+
+        <a class="btn btn-ghost" href="#">Let's ride!</a>
+
+      </div>
+    </div>
+
+
+
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.canyon.com/on/demandware.static/-/Sites-canyon-master/default/dwac7a192b/images/full/full_2021_/2021/full_2021_spectral-5_2674_tq-bk_P5.png)">
+    Mountain bike
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.canyon.com/on/demandware.static/-/Sites-canyon-master/default/dw39c73bb2/images/full/full_2021_/2021/full_2021_endurace-7_2942_bk-bk_P5.png)">
+    Road bike
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.kunstform.org/images/wethepeople-Arcade-2021-BMX-Rad-Matt-Black-20-5-TT--20201020135425-1.jpg)">
+    BMX
+  </div>
+</div>
+
+
+
+    <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Website powered by Z triple A <i class="fas fa-heart"></i>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+              <%# <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                <div class="search-form-control form-group">
+                  <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+                    <button name="button" type="submit" class="btn btn-flat">
+                      <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                </form> %>
