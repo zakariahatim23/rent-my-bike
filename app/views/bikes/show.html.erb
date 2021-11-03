@@ -1,2 +1,66 @@
-<h1>Bikes#show</h1>
-<p>Find me in app/views/bikes/show.html.erb</p>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="/">
+    <img src="https://i.pinimg.com/736x/e4/09/6f/e4096f0afce5bbb76ef00df733a2e951.jpg" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Messages</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container py-4 my-4 mx-auto d-flex flex-column">
+    <div class="header">
+        <div class="row r1">
+            <div class="col-md-9 abc">
+                <h1><%= @bike.title.upcase %></h1>
+            </div>
+            <div class="col-md-3 text-right pqr"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p class="text-right para"></p>
+        </div>
+    </div>
+    <div class="container-body mt-4">
+        <div class="row r3">
+            <div class="col-md-5 p-0 klo">
+                <ul>
+                <br>
+                <br>
+                <br>
+                    <li><em>Description :</em><strong> <%= @bike.description %> </strong></li>
+                    <li><em>Location :</em><strong> <%= @bike.location %> </strong></li>
+                    <li><em>Category :</em><strong> <%= @bike.category %> </strong></li>
+                    <li><em>Price :</em><strong> <%= @bike.price %>$ </strong></li>
+                    <li><em>Date :</em><strong> <%= @bike.listed_at %> </strong></li>
+                  
+                </ul>
+            </div>
+            <div class="img-bike col-md-7">  <%= image_tag @bike.photo , height: 400 %>
+</div>
+        </div>
+    </div>
+    
+        <div class="row r4">
+            <a class="btn btn-ghost" href="#">Contact Me</a>
+            <a class="btn btn-ghost" href="#">Rent My bike</a>
+        </div>
+    
+</div>
