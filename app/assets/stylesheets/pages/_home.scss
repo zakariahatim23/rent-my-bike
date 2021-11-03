@@ -33,18 +33,43 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.btn-ghost {
+
+.search {
   color: black;
   border: 1px solid #4A4A4A;
   padding: 8px 24px;
-  border-radius: 50px;
+  border-radius: 5px;
   font-weight: bold;
   margin: 10px 10px 10px 10px;
   opacity: 10;
   transition: opacity 0.3s ease;
 }
 
+.date-to {
+  color: black;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  opacity: 10;
+  transition: opacity 0.3s ease;
+}
 
+.btn-ghost {
+  color: black;
+  border: 5px solid black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 10px 10px 10px 30px;
+  background: #1EDD88;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
 
 .button {
   padding: 8px 16px;
@@ -75,6 +100,9 @@
 
 }
 
+.cards a:link {
+    text-decoration:none;
+}
 
 .footer {
   background: #F4F4F4;
