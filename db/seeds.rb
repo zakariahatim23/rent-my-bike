@@ -2,8 +2,7 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#  movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Bike.destroy_all
@@ -16,5 +15,3 @@ bike_4 = Bike.create!(title: "koga", description: "The best and the most beautif
 bike_5 = Bike.create!(title: "gazelle", description: "Gazelle Medeo T10 HMB Mid-Step S10 2021 Electric Trekking Bike Black. Compare product. Gazelle Orange C8 2021 Hybrid Bike Black", location: "Tanger", category: "Mountain Bike", price: 419, listed_at: "19/08/2020", photo: "bike5.jpg", user: user_1)
 bike_6 = Bike.create!(title: "schwinn", description: "Schwinn is the original American bike brand. Over the years, Schwinn has empowered millions of people, earning a special place in the hearts and minds of generations of riders. We have spent over a century building the bicycle industry into what it is today, and we’re not done yet.", location: "Casablanca", category: "Bike", price: 490, listed_at: "21/01/2019", photo: "bike6.jpg", user: user_1)
 bike_7 = Bike.create!(title: "argon 18", description: "a Canadian manufacturer of superior quality road, gravel, triathlon and track bikes.", location: "Essouira", category: "Bike", price: 500, listed_at: "21/02/2021", photo: "bike7.jpg", user: user_1)
-
-
