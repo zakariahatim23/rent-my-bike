@@ -1,14 +1,15 @@
 // Specific CSS for your home-page
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
+  margin-top: -15px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
 }
 
@@ -99,6 +100,23 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
 }
+
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 3000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-gap: 20px;
+
+}
+
 
 .cards a:link {
     text-decoration:none;
