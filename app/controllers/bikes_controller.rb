@@ -1,11 +1,11 @@
 class BikesController < ApplicationController
   before_action :find_bike, only: [:create, :update, :destroy, :show, :edit]
 
-  def index
+  def index 
     if params[:query].present?
       @bikes = Bike.where(title: params[:query])
     else
-    @bikes = Bike.all
+      @bikes = Bike.all
     end
   end
 
