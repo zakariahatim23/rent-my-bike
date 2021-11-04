@@ -13,11 +13,18 @@
    
   .container-body {
     
-        margin: 0;
-        color: black;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        font-size:20px;
-     
+    margin: 0;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    h1 {
+        text-align: justify;
+        letter-spacing: 3px;
+        font-size: 15px;
+        background-color: white;
+    } 
+    #image_tag {
+        border-radius: 8px;
+    }
       
 }
 

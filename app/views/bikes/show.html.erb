@@ -42,15 +42,19 @@
         <div class="row r3">
             <div class="col-md-5 p-0 klo">
                 <ul>
-                <br>
-                <br>
-                <br>
-                    <li><em>Description :</em><strong> <%= @bike.description %> </strong></li>
-                    <li><em>Location :</em><strong> <%= @bike.location %> </strong></li>
-                    <li><em>Category :</em><strong> <%= @bike.category %> </strong></li>
-                    <li><em>Price :</em><strong> <%= @bike.price %>$ </strong></li>
-                    <li><em>Date :</em><strong> <%= @bike.listed_at %> </strong></li>
-                  
+               
+                    <li><strong>Description :</strong><h1> <%= @bike.description %> </h1></li>
+                    <li><strong>Location :</strong><h1> <%= @bike.location %> </h1></li>
+                    <li><strong>Category :</strong><h1> <%= @bike.category %> </h1></li>
+                    <li><strong>Price :</strong><h1> <%= @bike.price %>$ </h1></li>
+                    <li><strong>Date :</strong><h1> <%= @bike.listed_at %> </h1></li>
+                    <div class="label-date">
+                    <li><label for="start">Start date:</label>
+                    <input type="date" id="start" name="trip-start" value="yyyy-mm-dd"></li>
+                    <br>
+                    <li><label for="end">end date:</label>
+                    <input type="date" id="end" name="trip-end" value="yyyy-mm-dd"></li>
+                    </div>
                 </ul>
             </div>
             <div class="img-bike col-md-7">  <%= image_tag @bike.photo , height: 400 %>
