@@ -3,7 +3,14 @@ class BikesController < ApplicationController
 
   def index 
     if params[:query].present?
-      @bikes = Bike.where(title: params[:query])
+      sql_query = " \
+        bikes.title ILIKE :query \
+        OR bikes.location ILIKE :query \
+        OR bikes.category ILIKE :query \
+      "
+      @bikes = Bike.where(sql_query, query: "%#{params[:query]}%")
+
+#@movies = Movie.joins(:director).where(sql_query, query: "%#{params[:query]}%")
     else
       @bikes = Bike.all
     end
