@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard</title>
+  <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/master.css" rel="stylesheet">
+  <link href="assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
+</head>
+
+<body>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="carde">
+                    <div class="content">
+                      <div class="head">
+                        <h1 class="mb-0">Owner</h1>
+                      </div>
+                      <div class="canvas-wrapper">
+                        <canvas class="chart" id="trafficflow"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="carde">
+                    <div class="content">
+                      <div class="head">
+                        <h1 class="mb-0">Renter</h1>
+                      </div>
+                      <div class="canvas-wrapper">
+                        <canvas class="chart" id="sales"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="content">
+                  <div class="head">
+                    <h5 class="mb-0">You have 2 bikes available for rental</h5>
+                    <p class="text-muted">The bikes i own</p>
+                  </div>
+                  <div class="canvas-wrapper">
+                    <table class="table table-striped">
+                      <thead class="success">
+                        <tr>
+                          <th>Bikes</th>
+                          <th class="text-end">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><i class="flag-icon flag-icon-us"></i>Cervelo</td>
+                          <td class="text-end">Rented</td>
+                        </tr>
+                        <tr>
+                          <td><i class="flag-icon flag-icon-in"></i>Koga</td>
+                          <td class="text-end">Available</td>
+                        </tr>
+                        <tr>
+                          <td><i class="flag-icon flag-icon-jp"></i>Gazelle</td>
+                          <td class="text-end">Available</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="content">
+                  <div class="head">
+                    <h5 class="mb-0">You are renting 1 bike</h5>
+                    <p class="text-muted">The bikes i'm renting</p>
+                  </div>
+                  <div class="canvas-wrapper">
+                    <table class="table table-striped">
+                      <thead class="success">
+                        <tr>
+                          <th>Bikes</th>
+                          <th class="text-end">Return date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Koga</td>
+                          <td class="text-end">19/11/2021</td>
+                        </tr>
+                        <tr>
+                          <td>Schwinn</td>
+                          <td class="text-end">Returned</td>
+                        </tr>
+                        <tr>
+                          <td>Argon 18</td>
+                          <td class="text-end">Returned</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <div class="content">
+                  <div class="rowe">
+                    <div class="dfd text-center">
+                      <i class="olive large-icon mb-2 fas fa-dollar-sign"></i>
+                      <h4 class="mb-0">219</h4>
+                      <p class="text-muted">Revenue</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <div class="content">
+                  <div class="rowe">
+                    <div class="dfd text-center">
+                      <i class="orange large-icon mb-2 fas fa-reply-all"></i>
+                      <h4 class="mb-0">+6</h4>
+                      <p class="text-muted">NEW CUSTOMERS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <div class="content">
+                  <div class="rowe">
+                    <div class="dfd text-center">
+                      <i class="grey large-icon mb-2 fas fa-envelope"></i>
+                      <h4 class="mb-0">2</h4>
+                      <p class="text-muted">UNANSWERD MESSAGES</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <div class="content">
+                  <div class="rowe">
+                    <div class="dfd text-center">
+                      <i class="olive large-icon mb-2 fas fa-dollar-sign"></i>
+                      <h4 class="mb-0">70</h4>
+                      <p class="text-muted">Payement due</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

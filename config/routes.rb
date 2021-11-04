@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  get 'xd', to: 'pages#dashboard'
+  get 'dashboard', to: 'pages#dashboard'
   resources :bikes do
     resources :reservations, only: [:index, :new, :create]
   end
