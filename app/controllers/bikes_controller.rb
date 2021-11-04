@@ -2,7 +2,11 @@ class BikesController < ApplicationController
   before_action :find_bike, only: [:create, :update, :destroy, :show, :edit]
 
   def index
+    if params[:query].present?
+      @bikes = Bike.where(title: params[:query])
+    else
     @bikes = Bike.all
+    end
   end
 
   def new
@@ -29,7 +33,7 @@ class BikesController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def edit
