@@ -1,24 +1,22 @@
 
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.happystubai.com/wp-content/uploads/2017/06/Happy-Stubai-Hotel-Neustift-Tirol-Stubaier-Gletscher-%C3%96sterreich-Hostel-Biking-Aktivurlaub-10.jpg);">
-      <div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.happystubai.com/wp-content/uploads/2017/06/Happy-Stubai-Hotel-Neustift-Tirol-Stubaier-Gletscher-%C3%96sterreich-Hostel-Biking-Aktivurlaub-10.jpg);">
+  <div class="container">
         <h1>Rent a Bike Anywhere in Morocco, Anytime </h1>
         <p>Renting a bike has never been easier</p>
 
+
 <div class="container">
-
-<form>
   <div class="wrapper">
-
     <div class="search-container">
-      <input type="text" class="search" placeholder="Type of bike...">
-      <input type="text" class="date-to" placeholder="Location...">
-
+          <%= form_tag bikes_path, method: :get do %>
+            <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find a bike" %>
+            <%= submit_tag "Search", class: "btn btn-primary" %>
+          <% end %>
     </div>
   </div>
-</form>
 </div>
 
-        <a class="btn btn-ghost" href="#">Let's ride!</a>
+       
 
       </div>
     </div>
@@ -47,18 +45,6 @@
     </div>
 
 
-    <div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    Website powered by Z triple A <i class="fas fa-heart"></i>
-  </div>
-</div>
 
 
 
