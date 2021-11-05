@@ -10,18 +10,23 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+  text-decoration: none;
 }
 
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .card-trip p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 a {
@@ -40,6 +45,7 @@ a:hover {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  text-decoration: none;
 }
 
 .card-trip-infos .card-trip-user {
@@ -47,12 +53,14 @@ a:hover {
   right: 16px;
   top: -20px;
   width: 40px;
+  text-decoration: none;
 }
 
 .card_bikes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  text-decoration: none;
 }
 
 
