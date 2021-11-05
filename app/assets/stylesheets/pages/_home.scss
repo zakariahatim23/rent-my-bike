@@ -11,6 +11,21 @@
   padding: 150px 0;
 }
 
+.btn-ghost {
+  color: black;
+  border: 5px solid black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 10px 10px 10px 30px;
+  background: #1EDD88;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
 .banner h1 {
   margin: 0;
   color: white;
